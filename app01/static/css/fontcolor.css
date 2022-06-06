@@ -1,0 +1,20 @@
+.f1{
+    color: 	rgba(235,127,176,1);
+}
+.info{
+    color: rgb(213,186,198);
+    text-align: center;
+    position: fixed; bottom: 0.5%; width: 100%;
+}
+.source{
+    color: 	rgba(235,89,155,0.9);
+    left: 1%;
+    position: fixed; bottom: 0.5%;
+    display: inline-block;
+}
+.source1{
+    color: 	rgba(235,89,155,0.9);
+    right: 1%;
+    position: fixed; bottom: 0.5%;
+    display: inline-block;
+}
