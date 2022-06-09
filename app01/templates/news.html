@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    <style>
+        body { background-image: url('../static/img/city.jpg');
+            background-repeat: no-repeat; background-attachment: fixed;
+            background-size: cover;}
+    </style>
+    <link rel="stylesheet" href="../static/css/newsPage.css">
+</head>
+<body>
+    <h1 class="f_news_top">News For You:</h1>
+    <ul>
+        {% for item in newsList %}
+            <li class="f_news_title"><a href="{{ item.link }}" target="blank">{{ item.title }}</a></li>
+            <div class="f_news_detail">{{ item.detail }}</div>
+            <div class="f_news_infor">From: {{ item.source }}, {{ item.time }} ago</div>
+        {% endfor %}
+
+    </ul>
+</body>
+</html>

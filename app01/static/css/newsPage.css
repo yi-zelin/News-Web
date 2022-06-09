@@ -1,0 +1,18 @@
+.f_news_top{
+    color: 	rgba(41, 82, 151, 0.8);
+    margin-left: 40px;
+}
+.f_news_title{
+    font-size: 23px;
+    padding-bottom: 8px;
+}
+.f_news_infor{
+    color: rgb(112, 130, 160);
+    font-size: 18px;
+    padding-bottom: 40px;
+    margin-left: 7%;
+}
+.f_news_detail{
+    color: rgb(85, 119, 177);
+    font-size: 18px;
+}

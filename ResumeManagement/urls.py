@@ -19,5 +19,6 @@ from app01 import views
 
 urlpatterns = [
     path('index/', views.mainpage),
+    path('news/', views.news),
     path('user/list', views.user_list),
 ]
