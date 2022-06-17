@@ -18,9 +18,3 @@ L
 app01/apps.py,0\5\05d04ec077b470fa0a0774f83fb247b312b6a593
 A
 app01/__init__.py,e\0\e052e50177810c3f286d3eb12dad70e1add7376e
-?
-app01/models.py,0\0\0091ef72d109661de9a55d5927fb4d7d5cca40b0
-9
-	manage.py,3\1\3156ad13e4d695cd526bbb7b031016ecba842270
-L
-ResumeManagement/settings.py,a\1\a16f0d2ec5d2927ebfeb7f4aea4025e81c4ea4e4

@@ -6,5 +6,21 @@
 </head>
 <body>
 <h1>User List</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th>User Name</th>
+        <th>Passwords</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in dataList %}
+        <tr>
+            <td>{{ obj.name }}</td>
+            <td>{{ obj.passwords }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
 </body>
 </html>

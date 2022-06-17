@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from app01 import models
+from django.shortcuts import render, HttpResponse, redirect
 
 
 # Create your views here.
@@ -8,7 +9,8 @@ def mainpage(request):
 
 
 def user_list(request):
-    return render(request, "user_list.html")
+    dataList = models.UserInfo.objects.all()
+    return render(request, "user_list.html", {"dataList": dataList})
 
 
 def news(req):
@@ -82,5 +84,28 @@ def news(req):
         newsList.extend(tempNewsList)
     # end loop here
 
-
     return render(req, 'news.html', {"newsList": newsList})
+
+
+def login(request):
+    if request.method == "GET":
+        return render(request, 'login.html')
+    user = request.POST.get('user')
+    pwd = request.POST.get('pwd')
+    selectUser = models.UserInfo.objects.filter(name=user).first()
+
+    if selectUser.password == pwd:
+        return HttpResponse("success")
+    return HttpResponse("failure")
+
+
+
+
+def signin(request):
+    if request.method == "GET":
+        return render(request, 'signin.html')
+    user = request.POST.get('user')
+    pwd = request.POST.get('pwd')
+
+    models.UserInfo.objects.create(name=user, password=pwd)
+    return redirect("/news/")

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/chaos/EvilEmail.html" method="post">
+            <div class="loginBox">
+                <div class="loginBoxCenter">
+                    <p><label for="username">User Name:</label></p>
+                    <!--autofocus 规定当页面加载时按钮应当自动地获得焦点。 -->
+                    <!-- placeholder提供可描述输入字段预期值的提示信息-->
+                    <p><input type="text" id="text" name="text" class="loginInput" autofocus="autofocus" required="required" autocomplete="off" placeholder="User Name" value="" /></p>
+                    <!-- required 规定必需在提交之前填写输入字段-->
+                    <p><label for="password">Passwords：</label></p>
+                    <p><input type="password" id="password" name="password" class="loginInput" required="required" placeholder="Passwords" value="" /></p>
+                </div>
+                <div class="loginBoxButtons">
+
+
+                    <button class="loginBtn">Login</button>
+                    <a class="btn btn-success" href="/signin/">Sign in</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+</html>
