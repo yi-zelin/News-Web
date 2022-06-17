@@ -8,16 +8,17 @@
 </head>
 <body>
     <div class="wrapper">
-        <form action="/chaos/EvilEmail.html" method="post">
+        <form method="post">
+            {% csrf_token %}
             <div class="loginBox">
                 <div class="loginBoxCenter">
                     <p><label for="username">User Name:</label></p>
                     <!--autofocus 规定当页面加载时按钮应当自动地获得焦点。 -->
                     <!-- placeholder提供可描述输入字段预期值的提示信息-->
-                    <p><input type="text" id="text" name="text" class="loginInput" autofocus="autofocus" required="required" autocomplete="off" placeholder="User Name" value="" /></p>
+                    <p><input type="text" id="text" name="user" class="loginInput" autofocus="autofocus" required="required" autocomplete="off" placeholder="User Name" value="" /></p>
                     <!-- required 规定必需在提交之前填写输入字段-->
                     <p><label for="password">Passwords：</label></p>
-                    <p><input type="password" id="password" name="password" class="loginInput" required="required" placeholder="Passwords" value="" /></p>
+                    <p><input type="password" id="password" name="pwd" class="loginInput" required="required" placeholder="Passwords" value="" /></p>
                 </div>
                 <div class="loginBoxButtons">
 

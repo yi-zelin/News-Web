@@ -99,8 +99,6 @@ def login(request):
     return HttpResponse("failure")
 
 
-
-
 def signin(request):
     if request.method == "GET":
         return render(request, 'signin.html')
